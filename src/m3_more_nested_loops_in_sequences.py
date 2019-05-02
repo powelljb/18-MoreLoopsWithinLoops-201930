@@ -452,9 +452,10 @@ def first_is_elsewhere_too(seq_seq):
     i = len(seq_seq[0])
     if i == 0:
         return False
-    if i > 0:
+    else:
         first = seq_seq[0]
     z = len(first)
+
     for k in range(z):
         check = first[k]
         for j in range(1,len(seq_seq)):
